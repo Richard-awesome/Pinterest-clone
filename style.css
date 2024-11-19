@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: crosshair;
+
+}
+
+/* This is the first layer of the header */
+li,a{
+    cursor: pointer;
+}
+
+
+
+header .layer-one {
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+}
+
+.first-set, .third-set, .second-set{
+    margin: 10px;
+}
+
+.pinterest-tings{
+    font-size: 30px;
+    margin: 10px;
+    gap: 30px;
+}
+
+.first-set{
+    display: flex;
+    place-items: center;
+    gap: 10px;
+}
+
+
+.second-set{
+    position: relative;
+}
+
+
+
+.third-set{
+    position: relative;
+}
+
+.search-icon{
+    padding: 3px;
+    left: 0;   
+}
+
+.home-button{
+    background-color: black;
+    padding: 20px;
+    border-radius: 2rem;
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: Helvetica;
+    font-size: 17px;
+    font-weight: bolder;
+    transition: all 0.3s ease-in-out;
+}
+
+@media(max-width: 1000px){
+    .home-button{
+        background-color: transparent;
+        color: black;
+    }
+
+    .home-button:hover{
+        background-color: rgba(0, 0, 0, 0.121);
+    }
+    .create-button{
+        display: none;
+    }
+}
+
+.third-set{
+    display: flex;
+    place-items: center;
+
+}
+
+.profile-pic{
+    width: 40px;
+    border-radius: 100%;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.profile-pic:hover{
+    padding: 20px;
+    border: blue solid 0.1rem;
+}
+
+.home-button:active{
+    background-color: rgba(0, 0, 0, 0.604);
+}
+
+.create-button{
+    font-size: 17px;
+    font-weight: bolder;
+    font-family: Helvetica;
+    text-decoration: none;
+    color: black;
+}
+
+.search{
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
+    padding: 20px;
+    border-radius: 30px;
+    border: 0;
+    background-color: rgba(128, 128, 128, 0.181);
+}
+@media(max-width: 1000px){
+    .search{
+    width: 20rem;
+}
+}
+
+.third-set{
+    display: flex;
+    gap: 20px;
+    font-size: 30px;
+}
+
+.third-set a, i{
+    color: gray;
+}
+
+/* This is the second layer of the header */
+
+.layer-two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.layer-two li{
+    margin: 10px;
+    list-style: none;
+    font-family: Helvetica;
+    font-weight: bolder;
+    transition: all 0.2s ease-in-out;
+}
+
+.layer-two li:hover{
+    border-bottom: solid rgba(0, 0, 0, 0.604);
+}
+
+.layer-two li a{
+    padding-top: 10px;
+    color: rgba(0, 0, 0, 0.604);
+    text-decoration: none;
+}
+
+header{
+    box-shadow: 0 0 5px;
+    width: 100%;
+    position: fixed;
+    background-color: whitesmoke;
+}
+
+main{
+
+    place-items:  center;
+    display: grid;
+    grid-template-columns: repeat(4, 3fr);
+    gap: 10px;
+}
+
+main div img{
+    border-radius: 1rem;
+    width: 200px;
+}
